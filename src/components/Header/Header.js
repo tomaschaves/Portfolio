@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
@@ -30,13 +30,18 @@ const Header = () =>  (
           <NavLink>About</NavLink>
         </Link>
       </li>
+      <li>
+        <Link href="#contact">
+          <NavLink>Contact</NavLink>
+        </Link>
+      </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/tomaschaves/">
-        <AiOutlineGithub size="3rem" />
+      <SocialIcons onClick={() => window.open('https://github.com/tomaschaves/', '_blank')}>
+        <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/tomas-chaves-dev/">
-        <AiOutlineLinkedin size="3rem" />
+      <SocialIcons onClick={() => window.open('https://www.linkedin.com/in/tomas-chaves-dev/', '_blank')}>
+        <AiFillLinkedin size="3rem" />
       </SocialIcons>
       <SocialIcons href="mailto:tomaschavesdev@gmail.com">
         <AiOutlineMail size="3rem" />

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import projects from '../../constants/projects.json';
 
 const Projects = () => (
   <Section nopadding id="projects">
@@ -11,7 +11,7 @@ const Projects = () => (
     <GridContainer>
     { /* TODO*/ }
       {
-        projects.map((project) => (
+        Object.values(projects).map((project) => (
           <BlogCard key={project.id}>
             <Img src={project.image} />
             <TitleContent>
@@ -23,7 +23,7 @@ const Projects = () => (
               <TitleContent>Stack</TitleContent>
               <TagList>
                 {
-                  project.tags.map((tag) => (
+                  project.tags.split(", ").map((tag) => (
                     <Tag key={tag}>{tag}</Tag>
                   ))
                 }
