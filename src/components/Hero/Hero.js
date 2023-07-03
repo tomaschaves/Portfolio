@@ -14,7 +14,7 @@ const Hero = () => (
       <SectionText>
         Escrever aqui o que eu ofereço à quem me contratar e o que posso ajudar eles a fazer
       </SectionText>
-      <Button onclick={()=> window.location = 'https://google.com'}> Learn More</Button>
+      <Button onclick={()=> window.location = 'https://google.com'}> Learn More</Button> { /* TODO*/ }
     </LeftSection>
   </Section>
 );

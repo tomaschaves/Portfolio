@@ -10,7 +10,7 @@ const Technologies = () =>  (
     <SectionTitle>Tecnologias empregadas</SectionTitle>
     <SectionText>
       Já trabalhei com algumas tecnologias até o momento.
-      No front-end com javascript e react(LISTAR OUTRAS AQUI (REACT HOOKS, CONTECT API, ...)) e no back-end com javascript/typescript(EXPRESS, .....)
+      No front-end com javascript e react(LISTAR OUTRAS AQUI (REACT HOOKS, CONTECT API, ...)) e no back-end com javascript/typescript(EXPRESS, .....) { /* TODO*/ }
     </SectionText>
     <List>
       <ListItem>
@@ -36,7 +36,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Design</ListTitle>
           <ListParagraph>
-            Experience with tools like Photoshop <DiPhotoshop size="2rem" /> and ibisPaint
+            Experience with tools like Photoshop <DiPhotoshop size="2rem" /> and ibisPaint { /* TODO*/ }
           </ListParagraph>
         </ListContainer>
       </ListItem>

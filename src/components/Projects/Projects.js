@@ -9,6 +9,7 @@ const Projects = () => (
     <SectionDivider />
     <SectionTitle main>Projetos</SectionTitle>
     <GridContainer>
+    { /* TODO*/ }
       {
         projects.map((project) => (
           <BlogCard key={project.id}>
