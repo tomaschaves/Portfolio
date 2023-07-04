@@ -1,12 +1,19 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
+import { IoMdFlag } from 'react-icons/io';
+import LanguageContext from '../../context/LanguageContext';
 
-const Header = () =>  (
-  <Container>
+
+const Header = () =>  {
+  const {idiom, setIdiom} = useContext(LanguageContext);
+
+  return (
+
+    <Container>
     <Div1>
       <Link href="/">
         <a style={{display: "flex", alignItems: "center", color: "white", marginBottom: '20px'}}>
@@ -35,6 +42,12 @@ const Header = () =>  (
           <NavLink>Contact</NavLink>
         </Link>
       </li>
+      <li>
+          { idiom === 'Portuguese' ? 
+            <NavLink onClick={() => setIdiom('English')}>&#127482;&#127480;</NavLink> :
+            <NavLink onClick={() => setIdiom('Portuguese')}>&#127463;&#127479;</NavLink>
+          }
+      </li>
     </Div2>
     <Div3>
       <SocialIcons onClick={() => window.open('https://github.com/tomaschaves/', '_blank')}>
@@ -48,6 +61,7 @@ const Header = () =>  (
       </SocialIcons>
     </Div3>
   </Container>
-);
+  )
+};
 
 export default Header;

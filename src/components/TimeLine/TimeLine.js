@@ -1,13 +1,15 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 // import { TimeLineData } from '../../constants/constants';
 import TimeLineData from '../../constants/timeline.json';
+import LanguageContext from '../../context/LanguageContext';
 
 const CAROUSEL_MAX = Object.entries(TimeLineData).length - 1;
 
 const Timeline = () => {
+  const {idiom} = useContext(LanguageContext);
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
