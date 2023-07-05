@@ -1,0 +1,5 @@
+[
+  {"language": "PT", "title": "Portfólio", "projects": "Projetos", "technologies": "Tecnologias", "about": "Sobre", "contact": "Contato"},
+  {"language": "EN", "title": "Portfolio", "projects": "Projects", "technologies": "Technologies", "about": "About", "contact": "Contact"},
+  {"language": "JP", "title": "ポートフォリオ", "projects": "プロジェクト", "technologies": "技術", "about": "私について", "contact": "連絡"}
+]

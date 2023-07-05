@@ -6,7 +6,7 @@ import { Container } from './LayoutStyles'
 import LanguageContext from '../context/LanguageContext'
 
 export const Layout = ({children}) => {
-  const [idiom, setIdiom] = useState('Portuguese'); 
+  const [idiom, setIdiom] = useState('PT'); 
   const provider = {
     idiom,
     setIdiom,

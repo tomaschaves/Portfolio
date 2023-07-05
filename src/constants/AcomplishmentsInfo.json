@@ -1,0 +1,10 @@
+[
+  {"language": "PT", "number": 20, "text": "Projetos Open Source"},
+  {"language": "PT", "number": 1000, "text": "Estudantes"},
+  {"language": "PT", "number": 1900, "text": "Seguidores no Github"},
+  {"language": "PT", "number": 5000, "text": "Estrelas no Github"},
+  {"language": "EN", "number": 20, "text": "Open Source Projects"},
+  {"language": "EN", "number": 1000, "text": "Students"},
+  {"language": "EN", "number": 1900, "text": "Github Followers"},
+  {"language": "EN", "number": 5000, "text": "Github Stars"}
+]

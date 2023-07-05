@@ -2,16 +2,17 @@ import React, { useState, useRef, useEffect, useContext } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-// import { TimeLineData } from '../../constants/constants';
-import TimeLineData from '../../constants/timeline.json';
+import TimeLineInfo from '../../constants/TimeLineInfo.json';
 import LanguageContext from '../../context/LanguageContext';
 
-const CAROUSEL_MAX = Object.entries(TimeLineData).length - 1;
-
 const Timeline = () => {
-  const {idiom} = useContext(LanguageContext);
+  const { idiom } = useContext(LanguageContext);
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
+  
+  const timeLineData = () => TimeLineInfo.filter((info) => info.language === idiom);
+  const CAROUSEL_MAX = Object.entries(timeLineData).length - 1;
+
 
   const scroll = (node, left) => {
     return node.scrollTo({ left, behavior: 'smooth' });
@@ -53,7 +54,7 @@ const Timeline = () => {
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
-          {Object.values(TimeLineData).map((item, index) => (
+          {timeLineData().map((item, index) => (
             <CarouselMobileScrollNode
               key={index}
               final={index === CAROUSEL_MAX}>
@@ -102,7 +103,7 @@ const Timeline = () => {
         </>
       </CarouselContainer>    { /* TODO*/ }
       <CarouselButtons> 
-        {Object.values(TimeLineData).map((item, index) => {
+        {timeLineData().map((item, index) => {
           return (
             <CarouselButton
               key={index}

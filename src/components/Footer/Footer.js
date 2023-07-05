@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import FooterInfo from '../../constants/FooterInfo.json';
+import LanguageContext from '../../context/LanguageContext';
 
 const Footer = () => {
+  const {idiom} = useContext(LanguageContext);
+  const actualInfos = () => FooterInfo.find((info) => info.language === idiom)
   return (
     <FooterWrapper id="contact">
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:55-31-99889-2636">+55-31-99889-2636</LinkItem>
+          <LinkItem href={`tel:${actualInfos().number}`}>{actualInfos().number}</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
@@ -21,7 +25,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project at a time</Slogan> { /* TODO*/ }
+          <Slogan>{actualInfos().slogan}</Slogan> { /* TODO*/ }
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons onClick={() => window.open('https://github.com/tomaschaves/', '_blank')}>

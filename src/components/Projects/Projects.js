@@ -2,11 +2,12 @@ import React, { useContext } from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import projects from '../../constants/projects.json';
+import ProjectsInfo from '../../constants/ProjectsInfo.json';
 import LanguageContext from '../../context/LanguageContext';
 
 const Projects = () => {
   const {idiom} = useContext(LanguageContext);
+  const projects = () => ProjectsInfo.filter((project) => project.language === idiom)
   
   return(
     <Section nopadding id="projects">
@@ -15,7 +16,7 @@ const Projects = () => {
       <GridContainer>
       { /* TODO*/ }
         {
-          Object.values(projects).map((project) => (
+          projects().map((project) => (
             <BlogCard key={project.id}>
               <Img src={project.image} />
               <TitleContent>
