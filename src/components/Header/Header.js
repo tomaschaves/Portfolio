@@ -42,18 +42,7 @@ const Header = () =>  {
         <Link href="#contact">
           <NavLink>{actualInfos().contact}</NavLink>
         </Link>
-      <li>
-        {
-          idiom !== 'PT' && <NavLink onClick={() => setIdiom('PT')}>&#127463;&#127479;</NavLink>
-        }
-        {
-          idiom !== 'EN' && <NavLink onClick={() => setIdiom('EN')}>&#127482;&#127480;</NavLink>
-        }
-        {
-          idiom !== 'JP' && <NavLink onClick={() => setIdiom('JP')}>&#127471;&#127477;</NavLink>
-        }
-      </li>
-    </li>
+        </li>
     </Div2>
     <Div3>
       <SocialIcons onClick={() => window.open('https://github.com/tomaschaves/', '_blank')}>
@@ -65,6 +54,17 @@ const Header = () =>  {
       <SocialIcons href="mailto:tomaschavesdev@gmail.com">
         <AiOutlineMail size="3rem" />
       </SocialIcons>
+      <li>
+        {
+          idiom !== 'PT' && <NavLink onClick={() => setIdiom('PT')}>&#127463;&#127479;</NavLink>
+        }
+        {
+          idiom !== 'EN' && <NavLink onClick={() => setIdiom('EN')}>&#127482;&#127480;</NavLink>
+        }
+        {
+          idiom !== 'JP' && <NavLink onClick={() => setIdiom('JP')}>&#127471;&#127477;</NavLink>
+        }
+    </li>
     </Div3>
   </Container>
   )

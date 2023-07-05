@@ -16,7 +16,6 @@ const Technologies = () => {
       <SectionTitle>{techData().usedTech}</SectionTitle>
       <SectionText>
         {techData().text}
-        { /* TODO*/ }
       </SectionText>
       <List>
         <ListItem>
@@ -42,7 +41,7 @@ const Technologies = () => {
           <ListContainer>
             <ListTitle>{techData().design}</ListTitle>
             <ListParagraph>
-              {techData().designText}{ /* TODO*/ }
+              {techData().designText}
             </ListParagraph>
           </ListContainer>
         </ListItem>
