@@ -7,12 +7,15 @@ import LanguageContext from '../../context/LanguageContext';
 
 const Projects = () => {
   const {idiom} = useContext(LanguageContext);
-  const projects = () => ProjectsInfo.filter((project) => project.language === idiom)
-  
+  const projects = () => ProjectsInfo.filter((project) => project.language === idiom);
+  const projectTitle = { "PT": "Projetos", "EN": "Projects", "JP": "プロジェクトス"};
+  const codeVisit = [{ "language": "PT", "code": "Código", "visit": "Visitar" }, { "language": "EN", "code": "Code", "visit": "Visit" }, { "language": "JP", "code": "コード", "visit": "参観する"}];
+  const buttonsText = () => codeVisit.find((param) => param.language === idiom);
+
   return(
     <Section nopadding id="projects">
       <SectionDivider />
-      <SectionTitle main>Projetos</SectionTitle>
+      <SectionTitle main>{projectTitle[`${idiom}`]}</SectionTitle>
       <GridContainer>
       { /* TODO*/ }
         {
@@ -35,8 +38,8 @@ const Projects = () => {
                 </TagList>
               </div>
               <UtilityList>
-                <ExternalLinks onClick={() => window.open(project.source, '_blank')}>Código</ExternalLinks>
-                <ExternalLinks onClick={() => window.open(project.visit, '_blank')}>Visitar</ExternalLinks>
+                <ExternalLinks onClick={() => window.open(project.source, '_blank')}>{buttonsText(idiom).code}</ExternalLinks>
+                <ExternalLinks onClick={() => window.open(project.visit, '_blank')}>{buttonsText(idiom).visit}</ExternalLinks>
               </UtilityList>
             </BlogCard>
           ))

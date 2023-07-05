@@ -1,0 +1,5 @@
+[
+  { "language": "PT", "about": "Sobre mim", "text": "xablau em português" },
+  { "language": "EN", "about": "About me", "text": "xablau in english" },
+  { "language": "JP", "about": "私について", "text": "日本語でシャブラウ" }
+]

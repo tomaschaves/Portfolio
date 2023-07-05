@@ -10,12 +10,6 @@ import HeaderInfo from '../../constants/HeaderInfo.json';
 const Header = () =>  {
   const {idiom, setIdiom} = useContext(LanguageContext);
 
-  const langs = [
-    {language: "PT", code: "&#127463;&#127479;", nextLanguage: 'EN'},
-    {language: "EN", code: "&#127482;&#127480;", nextLanguage: 'JP'},
-    {language: "JP", code: "60 216 239 221", nextLanguage: 'PT'}]
-
-  const actualFlag = (flag) => langs.find((lang) => lang.language === flag)
   const actualInfos = () => HeaderInfo.find((info) => info.language === idiom)
 
   return (
@@ -50,7 +44,13 @@ const Header = () =>  {
         </Link>
       <li>
         {
-          <NavLink onClick={() => setIdiom(actualFlag(idiom).nextLanguage)}>{actualFlag(idiom).nextLanguage}</NavLink>
+          idiom !== 'PT' && <NavLink onClick={() => setIdiom('PT')}>&#127463;&#127479;</NavLink>
+        }
+        {
+          idiom !== 'EN' && <NavLink onClick={() => setIdiom('EN')}>&#127482;&#127480;</NavLink>
+        }
+        {
+          idiom !== 'JP' && <NavLink onClick={() => setIdiom('JP')}>&#127471;&#127477;</NavLink>
         }
       </li>
     </li>

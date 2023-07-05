@@ -9,14 +9,13 @@ import HeroInfo from '../../constants/HeroInfo.json';
 const Hero = () => {
   const { idiom } = useContext(LanguageContext);
   const actualInfos = () => HeroInfo.find((info) => info.language === idiom);
-
   return(
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          {
-            actualInfos().welcome
-          }
+          {actualInfos().welcome1}
+          <br />
+          {actualInfos().welcome2} 
         </SectionTitle>
         <SectionText>
           {
