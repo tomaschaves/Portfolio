@@ -25,7 +25,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>{actualInfos().slogan}</Slogan> { /* TODO*/ }
+          {/* <Slogan>{actualInfos().slogan}</Slogan> */}
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons onClick={() => window.open('https://github.com/tomaschaves/', '_blank')}>

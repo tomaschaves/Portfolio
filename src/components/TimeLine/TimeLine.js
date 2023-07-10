@@ -50,6 +50,8 @@ const Timeline = () => {
 
   return (
     <Section id="about">
+      <SectionDivider />
+      <br />
       <SectionTitle>{timeLineTextData().about}</SectionTitle>
       <SectionText>
         {timeLineTextData().text}
@@ -118,7 +120,6 @@ const Timeline = () => {
           );
         })}
       </CarouselButtons>
-      <SectionDivider />
     </Section>
   );
 };

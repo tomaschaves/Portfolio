@@ -12,7 +12,7 @@ const Acomplishments = () => {
   return (
   <Section>
     <SectionTitle>Personal Achievements</SectionTitle>
-    <Boxes>   { /* TODO*/ }
+    <Boxes>
       {actualInfos().map((card, index) => ( 
         <Box key={index}>
           <BoxNum>{`${card.number}+`}</BoxNum>

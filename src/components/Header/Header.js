@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { useContext, useState } from 'react';
-import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 import LanguageContext from '../../context/LanguageContext';
@@ -23,11 +23,6 @@ const Header = () =>  {
       </Link>
     </Div1>
     <Div2>
-      <li>
-        <Link href="#projects">
-          <NavLink>{actualInfos().projects}</NavLink>
-        </Link>
-      </li>
       <li>
         <Link href="#tech">
           <NavLink>{actualInfos().technologies}</NavLink>
@@ -54,15 +49,21 @@ const Header = () =>  {
       <SocialIcons href="mailto:tomaschavesdev@gmail.com">
         <AiOutlineMail size="3rem" />
       </SocialIcons>
+      <SocialIcons onClick={() => window.open('https://wa.me/5531998892636?text=Olá,%20vi%20o%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20informações%20sobre%20o%20seu%20trabalho.', '_blank')}>
+        <AiOutlineWhatsApp size="3rem" />
+      </SocialIcons>
       <li>
         {
-          idiom !== 'PT' && <NavLink onClick={() => setIdiom('PT')}>&#127463;&#127479;</NavLink>
+          <NavLink onClick={() => setIdiom('PT')}>&#127463;&#127479;</NavLink>
         }
         {
-          idiom !== 'EN' && <NavLink onClick={() => setIdiom('EN')}>&#127482;&#127480;</NavLink>
+          <NavLink onClick={() => setIdiom('EN')}>&#127482;&#127480;</NavLink>
         }
         {
-          idiom !== 'JP' && <NavLink onClick={() => setIdiom('JP')}>&#127471;&#127477;</NavLink>
+          <NavLink onClick={() => setIdiom('JP')}>&#127471;&#127477;</NavLink>
+        }
+        {
+          <NavLink onClick={() => setIdiom('ES')}>&#127466;&#127480;</NavLink>
         }
     </li>
     </Div3>

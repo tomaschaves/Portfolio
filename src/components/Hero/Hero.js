@@ -15,14 +15,15 @@ const Hero = () => {
         <SectionTitle main center>
           {actualInfos().welcome1}
           <br />
-          {actualInfos().welcome2} 
+          {actualInfos().welcome2}
         </SectionTitle>
         <SectionText>
           {
             actualInfos().subtext
           }
         </SectionText>
-        <Button onclick={()=> window.location = 'https://google.com'}>{ actualInfos().learnMoreButton }</Button> { /* TODO*/ }
+        <Button onClick={()=> window.location = 'https://google.com'}>{ actualInfos().learnMoreButton }</Button>
+        {/* colocar acima o link do pdf do currículo para ser baixado pelo drive */}
       </LeftSection>
     </Section>
   )
