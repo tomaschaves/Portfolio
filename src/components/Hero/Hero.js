@@ -22,8 +22,7 @@ const Hero = () => {
             actualInfos().subtext
           }
         </SectionText>
-        <Button onClick={()=> window.location = 'https://google.com'}>{ actualInfos().learnMoreButton }</Button>
-        {/* colocar acima o link do pdf do currículo para ser baixado pelo drive */}
+        <Button onClick={()=> window.open(actualInfos().downloadCVLink, '_blank')}>{ actualInfos().learnMoreButton }</Button>
       </LeftSection>
     </Section>
   )

@@ -1,5 +1,6 @@
 [
   { "language": "PT", "about": "Sobre mim", "text": "Possuo um portfólio com váriados tipos de projetos, que me proporcionaram o conhecimento de algumas tecnologias em front end e back end. Além disso, por meio da coordenação de área em eventos, desenvolvi habilidades em lidar com clientes e pessoas no trabalho, estas últimas estejam no mesmo nível hierárquico que eu ou não." },
   { "language": "EN", "about": "About me", "text": "Having a portfolio with varied projects, I've had the opportunity to develop my knowldge in some technologies, in both front end and back end. Besides, through area supervision I also have developed abilities with handling clients and colleagues, the latter being at any hierarchical level related to mine." },
-  { "language": "JP", "about": "私について", "text": "様々なプロジェクトのポートフォリオがあり、フロントエンドとバックエンドの両方、いくつかの技術を生い立つ機会がありました。それに、方面の運営を通じて、顧客と同僚との応対能力も生い立ちました。" }
+  { "language": "JP", "about": "私について", "text": "様々なプロジェクトのポートフォリオがあり、フロントエンドとバックエンドの両方、いくつかの技術を生い立つ機会がありました。それに、方面の運営を通じて、顧客と同僚との応対能力も生い立ちました。" },
+  { "language": "ES", "about": "Sobre mí", "text": "Poseo un portafolio con varios tipos de proyectos, que me proporcionaron el conocimiento de algunas tecnologías en front end y back end. Además, a través de la coordinación de área en eventos, desarrollé habilidades en tratar con clientes y personas en el trabajo, estas últimas estén en el mismo nivel jerárquico que yo o no." }
 ]

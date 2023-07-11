@@ -18,7 +18,7 @@ const Header = () =>  {
     <Div1>
       <Link href="/">
         <a style={{display: "flex", alignItems: "center", color: "white", marginBottom: '20px'}}>
-          <DiCssdeck size="3rem" /> <Span>{actualInfos().title}</Span>
+          <Span>{actualInfos().title}</Span>
         </a>
       </Link>
     </Div1>
@@ -60,10 +60,10 @@ const Header = () =>  {
           <NavLink onClick={() => setIdiom('EN')}>&#127482;&#127480;</NavLink>
         }
         {
-          <NavLink onClick={() => setIdiom('JP')}>&#127471;&#127477;</NavLink>
+          <NavLink onClick={() => setIdiom('ES')}>&#127466;&#127480;</NavLink>
         }
         {
-          <NavLink onClick={() => setIdiom('ES')}>&#127466;&#127480;</NavLink>
+          <NavLink onClick={() => setIdiom('JP')}>&#127471;&#127477;</NavLink>
         }
     </li>
     </Div3>
