@@ -1,17 +1,17 @@
 [
-  { "language": "PT", "year": 2019, "text": "Comecei a trabalhar como jurado de concurso cosplay (fantasias nerds) em um evento de cultura geek" },
+  { "language": "PT", "year": 2019, "text": "Comecei a trabalhar como jurado de concurso cosplay (fantasias, normalmente voltadas para o mundo nerd) em um evento de cultura geek" },
   { "language": "PT", "year": 2020, "text": "Me tornei o coordenador de toda a área cosplay, gerenciando todas as áreas subordinadas, do concurso ao atendimento ao consumidor" },
   { "language": "PT", "year": 2020, "text": "Automatizei o sistema de julgamento e gerenciamento do concurso, facilitando a organização e classificação dos participantes" },
   { "language": "PT", "year": 2021, "text": "Me graduei em arquitetura" },
-  { "language": "PT","year": 2022, "text": "Comecei uma transição de carreira para a área tech" },
+  { "language": "PT", "year": 2022, "text": "Comecei uma transição de carreira para a área tech" },
   { "language": "EN", "year": 2019, "text": "Started working as a cosplay judge on a geek culture event" },
   { "language": "EN", "year": 2020, "text": "Became the coordinator of the entire cosplay area, managing all related areas, from contest to customer service" },
   { "language": "EN", "year": 2020, "text": "Automated the constest's managing and judge system, making easier the organization and classification of the participants" },
   { "language": "EN", "year": 2021, "text": "Graduated as an Architect" },
-  { "language": "EN","year": 2022, "text": "Started a career transitioning into tech" },
-  { "language": "JP", "year": 2019, "text": "ギークイベントでコスプレの裁くを働き始めた" },
-  { "language": "JP", "year": 2020, "text": "コスプレエリア中の主任をなりました、コンテストから顧客サービスまで" },
-  { "language": "JP", "year": 2020, "text": "コンテストの裁くと管理のシステムを自動化された、準備と参加者分類ため" },
-  { "language": "JP", "year": 2021, "text": "建築家として卒業した" },
-  { "language": "JP","year": 2022, "text": "技術分野をキャリアの移行した" }
+  { "language": "EN", "year": 2022, "text": "Started a career transitioning into tech" },
+  { "language": "JP", "year": 2019, "text": "ギークイベントでコスプレの評価で働き始めました" },
+  { "language": "JP", "year": 2020, "text": "コンテストから顧客サービスまで、コスプレエリア中の主任になりました。" },
+  { "language": "JP", "year": 2020, "text": "準備と参加者分類を簡単にするため、コンテストの評価と管理のシステムを自動化しました。" },
+  { "language": "JP", "year": 2021, "text": "建築家として卒業しました" },
+  { "language": "JP", "year": 2022, "text": "技術分野のキャリアに移行しました" }
 ]
