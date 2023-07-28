@@ -42,7 +42,7 @@ const Home = () => {
       <Projects />
       <Technologies />
       <Timeline />
-      {/* { show && ( */}
+      {/* { show && (
         <Section>
           <SectionDivider />
           <br />
@@ -53,7 +53,7 @@ const Home = () => {
             Xablau
           </SectionText>
         </Section>
-      {/* ) } */}
+      ) } */}
       {/* <Acomplishments /> */}
     </Layout>
     </div>
