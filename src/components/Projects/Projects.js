@@ -8,7 +8,7 @@ import LanguageContext from '../../context/LanguageContext';
 const Projects = () => {
   const {idiom} = useContext(LanguageContext);
   const projects = () => ProjectsInfo.filter((project) => project.language === idiom);
-  const projectTitle = { "PT": "Projetos", "EN": "Projects", "JP": "プロジェクトス"};
+  const projectTitle = { "PT": "Projetos", "EN": "Projects", "JP": "プロジェクトス", "ES": "Proyectos" };
   const codeVisit = [{ "language": "PT", "code": "Código", "visit": "Visitar" }, { "language": "EN", "code": "Code", "visit": "Visit" }, { "language": "JP", "code": "コード", "visit": "参観する"}, { "language": "ES", "code": "Código", "visit": "Visitar" }];
   const buttonsText = () => codeVisit.find((param) => param.language === idiom);
 
