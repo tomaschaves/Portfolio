@@ -11,6 +11,7 @@ const Header = () =>  {
   const {idiom, setIdiom} = useContext(LanguageContext);
 
   const actualInfos = () => HeaderInfo.find((info) => info.language === idiom)
+  const flags = (flag) => HeaderInfo.find((info) => info.language === flag)
 
   return (
 
@@ -54,16 +55,16 @@ const Header = () =>  {
       </SocialIcons>
       <li>
         {
-          <NavLink onClick={() => setIdiom('PT')}>&#127463;&#127479;</NavLink>
+          <NavLink onClick={() => setIdiom('PT')}><img src={flags('PT').flag} alt={flags('PT').language} style={{width: '25px'}}/></NavLink>
         }
         {
-          <NavLink onClick={() => setIdiom('EN')}>&#127482;&#127480;</NavLink>
+          <NavLink onClick={() => setIdiom('EN')}><img src={flags('EN').flag} alt={flags('EN').language} style={{width: '25px'}}/></NavLink>
         }
         {
-          <NavLink onClick={() => setIdiom('ES')}>&#127466;&#127480;</NavLink>
+          <NavLink onClick={() => setIdiom('ES')}><img src={flags('ES').flag} alt={flags('ES').language} style={{width: '25px'}}/></NavLink>
         }
         {
-          <NavLink onClick={() => setIdiom('JP')}>&#127471;&#127477;</NavLink>
+          <NavLink onClick={() => setIdiom('JP')}><img src={flags('JP').flag} alt={flags('JP').language} style={{width: '25px'}}/></NavLink>
         }
     </li>
     </Div3>
